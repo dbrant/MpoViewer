@@ -1,0 +1,16 @@
+*.class
+*.suo
+*.user
+*.local
+.metadata
+.idea
+.settings
+target/
+bin/
+gen/
+obj/
+local.properties
+gen-external-apklibs/
+Release/
+Release_Build/
+Keystore/
