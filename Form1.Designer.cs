@@ -57,33 +57,25 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuSave});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(144, 26);
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // mnuSave
             // 
-            this.mnuSave.Image = ((System.Drawing.Image)(resources.GetObject("mnuSave.Image")));
+            resources.ApplyResources(this.mnuSave, "mnuSave");
             this.mnuSave.Name = "mnuSave";
-            this.mnuSave.Size = new System.Drawing.Size(143, 22);
-            this.mnuSave.Text = "Save image...";
             this.mnuSave.Click += new System.EventHandler(this.mnuSave_Click);
             // 
             // pictureBox
             // 
-            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox.ContextMenuStrip = this.contextMenuStrip1;
-            this.pictureBox.Location = new System.Drawing.Point(12, 34);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(664, 383);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 7;
             this.pictureBox.TabStop = false;
             // 
             // toolStrip1
             // 
-            this.toolStrip1.AutoSize = false;
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -99,113 +91,88 @@
             this.btnSlower,
             this.btnFaster,
             this.btnAbout});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(688, 30);
-            this.toolStrip1.TabIndex = 0;
             this.toolStrip1.TabStop = true;
-            this.toolStrip1.Text = "toolStrip1";
             // 
             // btnOpen
             // 
             this.btnOpen.AutoToolTip = false;
-            this.btnOpen.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnOpen.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen.Image")));
-            this.btnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.btnOpen, "btnOpen");
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(66, 27);
-            this.btnOpen.Text = "Open...";
             this.btnOpen.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 30);
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(41, 27);
-            this.toolStripLabel2.Text = "Mode:";
+            resources.ApplyResources(this.toolStripLabel2, "toolStripLabel2");
             // 
             // cbMode
             // 
             this.cbMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMode.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            resources.ApplyResources(this.cbMode, "cbMode");
             this.cbMode.Items.AddRange(new object[] {
-            "Single",
-            "Stereo (cross-eye)",
-            "Stereo (relaxed-eye)"});
+            resources.GetString("cbMode.Items"),
+            resources.GetString("cbMode.Items1"),
+            resources.GetString("cbMode.Items2")});
             this.cbMode.Name = "cbMode";
-            this.cbMode.Size = new System.Drawing.Size(130, 30);
             this.cbMode.SelectedIndexChanged += new System.EventHandler(this.cbMode_SelectedIndexChanged);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 30);
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
             // 
             // lblImage
             // 
             this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(43, 27);
-            this.lblImage.Text = "Image:";
+            resources.ApplyResources(this.lblImage, "lblImage");
             // 
             // cbImage
             // 
             this.cbImage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbImage.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cbImage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            resources.ApplyResources(this.cbImage, "cbImage");
             this.cbImage.Name = "cbImage";
-            this.cbImage.Size = new System.Drawing.Size(75, 30);
             this.cbImage.SelectedIndexChanged += new System.EventHandler(this.cbImage_SelectedIndexChanged);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
             // 
             // btnCycle
             // 
             this.btnCycle.AutoToolTip = false;
             this.btnCycle.CheckOnClick = true;
-            this.btnCycle.Image = ((System.Drawing.Image)(resources.GetObject("btnCycle.Image")));
-            this.btnCycle.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.btnCycle, "btnCycle");
             this.btnCycle.Name = "btnCycle";
-            this.btnCycle.Size = new System.Drawing.Size(56, 27);
-            this.btnCycle.Text = "Cycle";
             this.btnCycle.Click += new System.EventHandler(this.btnCycle_Click);
             // 
             // btnSlower
             // 
             this.btnSlower.AutoToolTip = false;
-            this.btnSlower.Image = ((System.Drawing.Image)(resources.GetObject("btnSlower.Image")));
-            this.btnSlower.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.btnSlower, "btnSlower");
             this.btnSlower.Name = "btnSlower";
-            this.btnSlower.Size = new System.Drawing.Size(62, 27);
-            this.btnSlower.Text = "Slower";
             this.btnSlower.Click += new System.EventHandler(this.btnSlower_Click);
             // 
             // btnFaster
             // 
             this.btnFaster.AutoToolTip = false;
-            this.btnFaster.Image = ((System.Drawing.Image)(resources.GetObject("btnFaster.Image")));
-            this.btnFaster.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.btnFaster, "btnFaster");
             this.btnFaster.Name = "btnFaster";
-            this.btnFaster.Size = new System.Drawing.Size(58, 27);
-            this.btnFaster.Text = "Faster";
             this.btnFaster.Click += new System.EventHandler(this.btnFaster_Click);
             // 
             // btnAbout
             // 
             this.btnAbout.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.btnAbout.AutoToolTip = false;
-            this.btnAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.Image")));
-            this.btnAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.btnAbout, "btnAbout");
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(69, 27);
-            this.btnAbout.Text = "About...";
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // timerCycle
@@ -216,12 +183,10 @@
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 429);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
