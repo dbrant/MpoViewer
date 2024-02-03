@@ -15,7 +15,6 @@ namespace MpoViewer
         public Form1(string[] args)
         {
             InitializeComponent();
-            Utils.FixDialogFont(this);
             this.Text = Application.ProductName;
             cbMode.SelectedIndex = 0;
 
